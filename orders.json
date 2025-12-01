@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1764631120383",
+    "customerName": "аыппывп",
+    "customerPhone": "пвыпвыпы",
+    "deliveryAddress": "пывпы",
+    "orderDate": "2025-12-02",
+    "status": "В сборке",
+    "paid": true,
+    "product": {
+      "name": "Стиральная машина Bosch",
+      "category": "Стиральные машины",
+      "price": 39999.0
+    }
+  },
+  {
+    "id": "1764631145181",
+    "customerName": "выпыпвы",
+    "customerPhone": "пвыпвыпвы",
+    "deliveryAddress": "пвыпыпыв",
+    "orderDate": "2025-12-02",
+    "status": "В обработке",
+    "paid": true,
+    "product": {
+      "name": "Стиральная машина Bosch",
+      "category": "Стиральные машины",
+      "price": 39999.0
+    }
+  }
+]

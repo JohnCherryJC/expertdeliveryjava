@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="8" xmlns:fx="http://javafx.com/fxml" fx:controller="com.expert.orders.controllers.DeliveryController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Модуль доставок" styleClass="section-title"/>
+    <HBox spacing="8">
+        <TextField fx:id="courierField" promptText="Имя курьера"/>
+        <DatePicker fx:id="datePicker"/>
+        <Button text="Создать доставку" onAction="#createDelivery"/>
+    </HBox>
+
+    <Label text="Выберите заказ для доставки:"/>
+    <ListView fx:id="deliveryListView" VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="8">
+        <Label text="Всего доставок:"/>
+        <Label fx:id="deliveriesCount"/>
+    </HBox>
+</VBox>

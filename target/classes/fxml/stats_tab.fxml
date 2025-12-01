@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.expert.orders.controllers.StatsController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Отчёты и статистика" styleClass="section-title"/>
+    <HBox spacing="8">
+        <Label text="Всего заказов:"/>
+        <Label fx:id="totalOrders"/>
+    </HBox>
+    <HBox spacing="8">
+        <Label text="Средняя сумма заказа:"/>
+        <Label fx:id="avgPrice"/>
+    </HBox>
+    <PieChart fx:id="statusChart" prefHeight="300" prefWidth="400"/>
+</VBox>

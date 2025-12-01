@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="8" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.expert.orders.controllers.DeliveryStatusController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Статус доставок" styleClass="section-title"/>
+
+    <TableView fx:id="statusTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID заказа" prefWidth="100"/>
+            <TableColumn fx:id="colProduct" text="Товар" prefWidth="200"/>
+            <TableColumn fx:id="colCourier" text="Курьер" prefWidth="150"/>
+            <TableColumn fx:id="colDateCreated" text="Дата создания" prefWidth="150"/>
+            <TableColumn fx:id="colStatus" text="Статус" prefWidth="150"/>
+            <TableColumn fx:id="colPlannedDeliveryDate" text="Плановая дата доставки" prefWidth="180"/>
+            <TableColumn fx:id="colDateDelivered" text="Дата доставки" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>

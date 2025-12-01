@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.expert.orders.controllers.MainController">
+
+    <top>
+        <ToolBar>
+            <Label text="Expert — Система заказов" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="О программе" onAction="#onAbout"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <TabPane>
+            <tabs>
+                <Tab text="Заказы">
+                    <fx:include source="orders_tab.fxml"/>
+                </Tab>
+                <Tab text="Доставки">
+                    <fx:include source="delivery_tab.fxml"/>
+                </Tab>
+                <Tab text="Статистика">
+                    <fx:include source="stats_tab.fxml"/>
+                </Tab>
+            </tabs>
+            <Tab text="Статус доставки">
+                <fx:include source="delivery_status_tab.fxml"/>
+            </Tab>
+
+        </TabPane>
+    </center>
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+</BorderPane>
